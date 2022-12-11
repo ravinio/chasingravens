@@ -4,13 +4,13 @@ import Loader from '../Loader/Loader'
 import { Flex, Box, Divider, Center  } from '@chakra-ui/react'
 
 const BlogPage = (props) => {
-    const {blogPost, isBlogLoading} = useContext(Context)
+    const {isBlogLoading} = useContext(Context)
 
     if (isBlogLoading) {
         return <Loader />
     }
 
-    const { id, postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink } = props
+    const { postTitle, postFoodImg, postDate, postAtmosphere, postFood, postService, postValue, postOverall, postSink } = props
 
     return (
             <Flex className='blogExpanded' flexDirection='column' w='100%'>  
