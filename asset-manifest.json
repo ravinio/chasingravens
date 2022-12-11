@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/chasingravens/static/css/main.2a83137f.css",
+    "main.js": "/chasingravens/static/js/main.82b46332.js",
+    "static/media/sand.jpg": "/chasingravens/static/media/sand.b89b1d552971531a84d7.jpg",
+    "static/media/us-and-rainbow.JPEG": "/chasingravens/static/media/us-and-rainbow.6b3ef6e88dfa01d34da9.JPEG",
+    "static/media/blue-location.jpg": "/chasingravens/static/media/blue-location.9117608ee29d481c9f52.jpg",
+    "static/media/spezia-location.jpeg": "/chasingravens/static/media/spezia-location.5867ba1c1cb4cf579e28.jpeg",
+    "static/media/los-tapatios-location.jpeg": "/chasingravens/static/media/los-tapatios-location.7ad7462ab6ca153bd18d.jpeg",
+    "static/media/sakura-bana-food-v2.jpeg": "/chasingravens/static/media/sakura-bana-food-v2.1f01b9eb2a98f2497e9d.jpeg",
+    "static/media/los-tapatios-food.jpeg": "/chasingravens/static/media/los-tapatios-food.fb342ad9c6146709205a.jpeg",
+    "static/media/sakura-bana-food.jpeg": "/chasingravens/static/media/sakura-bana-food.d8ea806fe595772f5ca2.jpeg",
+    "static/media/spezia-food.jpeg": "/chasingravens/static/media/spezia-food.7d0312a39aae81779d48.jpeg",
+    "static/media/early-bird-food.jpeg": "/chasingravens/static/media/early-bird-food.c082627b91e20cd63667.jpeg",
+    "static/media/blue-food.jpeg": "/chasingravens/static/media/blue-food.252c8ab8163e260906e4.jpeg",
+    "static/media/early-bird-location.jpeg": "/chasingravens/static/media/early-bird-location.ed5023294ee9d92a16cb.jpeg",
+    "static/media/bat.svg": "/chasingravens/static/media/bat.79c5c773360dfa5ec4f3bd5ec9862b2b.svg",
+    "index.html": "/chasingravens/index.html",
+    "main.2a83137f.css.map": "/chasingravens/static/css/main.2a83137f.css.map",
+    "main.82b46332.js.map": "/chasingravens/static/js/main.82b46332.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a83137f.css",
+    "static/js/main.82b46332.js"
+  ]
+}
