@@ -1,0 +1,60 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $textColor;
+    background-color: $background;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.accentText {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    padding: 100px;
+
+    @media (max-width: $breakPoint) {
+        padding: 50px 20px;
+    }
+}
+
+.titleText {
+    color: $textColor;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 10px;
+
+    .white & {
+        color: $white;
+    }
+
+    &:first-letter {
+        font-size: 1.5em;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        color: $primaryColor;
+    }
+}
+
+p {
+    color: $textColor;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}

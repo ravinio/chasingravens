@@ -1,0 +1,168 @@
+//Blog Landing Page
+.blogWrap {
+    height: 70vh;
+    width: 100vw;
+    padding: 100px 20px 0px 20px;
+
+
+    background-image: linear-gradient(180deg, rgba(18,18,26,0.2) 0%, rgba(18,18,26,1) 84%), url(../assets/Us/us-and-rainbow.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    filter: grayscale(50%);
+
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5em;
+        line-height: 1.1;
+        color: $white;
+        margin-bottom: 10px;
+        text-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+        @media (max-width: $breakPoint) {
+            font-size: 2.5em;
+        }
+    }
+
+    p {
+        max-width: 900px;
+        font-size: 1em;
+        color: $white;
+    }
+
+    .sinkEmphasis {
+        font-style: normal;
+        text-transform: uppercase;
+
+        --bg-size: 400%;
+        --color-one: #FF2173;
+        --color-two: #fff;
+        background: linear-gradient(
+                        90deg,
+                        var(--color-one),
+                        var(--color-two),
+                        var(--color-one)
+                    ) 0 0 / var(--bg-size) 100%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: move-bg 8s infinite linear;
+    }
+
+    @keyframes move-bg {
+        to {
+          background-position: var(--bg-size) 0;
+        }
+      }
+}
+
+//Expanded Blog Landing Page
+.blogImg {
+    height: 50vh;
+    width: 100vw;
+    padding: 100px 40px 20px 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    filter: grayscale(70%);
+    filter: brightness(0.4);
+
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.blogExpandedContainer {
+    background-color: #fff;
+    height: fit-content;
+}
+
+.blogExpanded {
+    height: fit-content;
+    // background-color: $white;
+
+    font-family: 'Source Code Pro', monospace;
+    color: $background;
+
+    h4 {
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: calc(38px + (78 - 38) * ((100vw - 270px) / (1600 - 270)));
+        line-height: 1.1;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .sinkEmphasis {
+        text-align: center;
+        font-style: normal;
+        text-transform: uppercase;
+
+        --bg-size: 400%;
+        --color-one: #FF2173;
+        --color-two: #fff;
+        background: linear-gradient(
+                        90deg,
+                        var(--color-one),
+                        var(--color-two),
+                        var(--color-one)
+                    ) 0 0 / var(--bg-size) 100%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: move-bg 8s infinite linear;
+    }
+
+    @keyframes move-bg {
+        to {
+          background-position: var(--bg-size) 0;
+        }
+    }
+
+    .dividerStyle {
+        width: 50px;
+        margin-top: 30px;
+        border: 1px solid $primaryColor;
+    }
+
+    .sectionTitle {
+    color: $background;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 10px;
+
+        &:first-letter {
+            font-size: 1.5em;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: $primaryColor;
+        }
+    }
+
+    .sectionParagraph {
+        font-size: calc(12px + (15 - 12) * ((100vw - 270px) / (1600 - 270)));
+    }
+
+    .foodImg {
+        height: 50vh;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sinkSection {
+        font-size: calc(22px + (32 - 22) * ((100vw - 270px) / (1600 - 270)));
+        line-height: 1.1;
+        font-weight: 700;
+    }
+}

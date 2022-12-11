@@ -1,0 +1,42 @@
+.postContainer {
+    padding: 0px 50px;
+}
+
+.postSquare {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.5);
+
+    h2 {
+        font-size: calc(18px + (38 - 18) * ((100vw - 270px) / (1600 - 270)));
+        font-weight: 700;
+        text-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    }
+
+    .sinkEmphasis {
+        font-style: normal;
+
+        --bg-size: 400%;
+        --color-one: #FF2173;
+        --color-two: #fff;
+        background: linear-gradient(
+                        90deg,
+                        var(--color-one),
+                        var(--color-two),
+                        var(--color-one)
+                    ) 0 0 / var(--bg-size) 100%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: move-bg 8s infinite linear;
+    }
+
+    .blogLink {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,27 @@
+.introWrapper {
+    padding: 100px 0px;
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgba(18, 18, 26,1);
+    
+    @media (max-width: 950px) {
+        padding: 50px 1em;
+    }
+}
+
+.introTitle {
+    color: $textColor;
+    font-size: calc(34px + (58 - 34) * ((100vw - 270px) / (1600 - 270)));
+    font-weight: 300;
+    line-height: 1.1;
+    text-align: center;
+
+    .white & {
+        color: $white;
+    }
+
+    &:first-letter {
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        color: $primaryColor;
+    }
+}
