@@ -6,33 +6,30 @@ const Footer = () => {
   return (
     <Flex className='footerBackground' alignItems={{ base: 'center', md: 'end' }} flexDirection={{ base: 'column', md: 'row' }}>      
         <Flex my={{ base: 2, md: 8 }} gap={5}>
-            <a href='/' passHref>
+            <a href='/'>
                 <Button 
                     p={0}
                     variant='ghost'
-                    ariaLabel='home'
                     color='rgba(255,255,255,0.7)'
                 >
                     Home
                 </Button>
             </a>
 
-            <a href='/About' passHref>
+            <a href='/About'>
                 <Button 
                     p={0}
                     variant='ghost'
-                    ariaLabel='about'
                     color='rgba(255,255,255,0.7)'
                 >
                     About
                 </Button>
             </a>
 
-            <a href='/Blogs' passHref>
+            <a href='/Blogs'>
                 <Button 
                     p={0}
                     variant='ghost'
-                    ariaLabel='Blogs'
                     color='rgba(255,255,255,0.7)'
                 >
                     Blogs

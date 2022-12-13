@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { client } from './client'
-import { cleanUpAbout, cleanUpCarouselSllides, cleanUpBlogPost, cleanUpExpandedBlog } from './helpers'
+import { cleanUpAbout, cleanUpCarouselSllides, cleanUpBlogPost } from './helpers'
 
 export const Context = React.createContext()
 
@@ -11,8 +11,8 @@ export const Provider = (props) => {
     const [carouselSlides, setCarouselSlides] = useState([])
     const [isBlogLoading, setIsBlogLoading] = useState(false)
     const [blogPost, setBlogPost] = useState([])
-    const [expandedBlog, setExpandedBlog] = useState({})
-    const [isExpandedBlogLoading, setIsExpandedBlogLoading] = useState(false) 
+    // const [expandedBlog, setExpandedBlog] = useState({})
+    // const [isExpandedBlogLoading, setIsExpandedBlogLoading] = useState(false) 
 
     //About
     const saveAboutData = useCallback((rawData) => {
@@ -98,30 +98,30 @@ export const Provider = (props) => {
     
 
     //Expanded Blog
-    const saveExpandedBlogData = useCallback((rawData) => {
-        const cleanExpandedBlogData = cleanUpExpandedBlog(rawData)
-        setExpandedBlog(cleanExpandedBlogData)
-    }, [])
+    // const saveExpandedBlogData = useCallback((rawData) => {
+    //     const cleanExpandedBlogData = cleanUpExpandedBlog(rawData)
+    //     setExpandedBlog(cleanExpandedBlogData)
+    // }, [])
 
-    const getExpandedBlog = useCallback( async () => {
-        setIsExpandedBlogLoading(true)
-        try {
-            const response = await client.getEntry({ content_type: 'blogPost' })
-            if (response) {
-                saveExpandedBlogData(response)
-            } else {
-                setExpandedBlog({})
-            }
-            setIsExpandedBlogLoading(false)
-        } catch (error) {
-            console.log(error)
-            setIsExpandedBlogLoading(false)
-        }
-    }, [saveExpandedBlogData])
+    // const getExpandedBlog = useCallback( async () => {
+    //     setIsExpandedBlogLoading(true)
+    //     try {
+    //         const response = await client.getEntry({ content_type: 'blogPost' })
+    //         if (response) {
+    //             saveExpandedBlogData(response)
+    //         } else {
+    //             setExpandedBlog({})
+    //         }
+    //         setIsExpandedBlogLoading(false)
+    //     } catch (error) {
+    //         console.log(error)
+    //         setIsExpandedBlogLoading(false)
+    //     }
+    // }, [saveExpandedBlogData])
 
-    useEffect(()=> {
-        getExpandedBlog()
-    }, [getExpandedBlog] )
+    // useEffect(()=> {
+    //     getExpandedBlog()
+    // }, [getExpandedBlog] )
 
 
     const contextData = {
@@ -131,8 +131,8 @@ export const Provider = (props) => {
         isCarouselLoading,
         blogPost,
         isBlogLoading,
-        expandedBlog,
-        isExpandedBlogLoading
+        // expandedBlog,
+        // isExpandedBlogLoading
     }
 
     return (

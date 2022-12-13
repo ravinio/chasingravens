@@ -20,7 +20,6 @@ const FeaturedBlog = () => {
         <Flex display={display} w='100vw' h='100vh' bgColor='rgba(18,18,26,0.8)' zIndex={1000} pos='fixed' top='50' right='0' overflowY='auto' px={{ base: '10px', sm: '40px', md: '50px', lg: '100px' }} py={{ base: '10px', sm: '40px', md: '50px', lg: '100px' }}>
           <Flex className='blogExpandedContainer' w='100vw'>
             <IconButton 
-                ariaLabel='Close Icon'
                 size='lg'
                 icon={ <ArrowBackIcon />}
                 variant='ghost'

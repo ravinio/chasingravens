@@ -54,21 +54,21 @@ export const cleanUpBlogPost = (rawData) => {
     return cleanPost
 }
 
-export const cleanUpExpandedBlog = (rawData) => {
-    const {sys, fields} = rawData
-    const {id} = sys
-    const postTitle = fields.restaurantName
-    const postLocationImg = fields.locationImage.fields.file.url
-    const postFoodImg = fields.foodImage.fields.file.url
-    const postDate = fields.date
-    const postLocation = fields.location
-    const postAtmosphere = fields.atmosphereRating
-    const postFood = fields.foodRating
-    const postService = fields.serviceRating
-    const postValue = fields.valueRating
-    const postOverall = fields.overallRating
-    const postSink = fields.sinkRating
-    let cleanExpandedBlog = { id, postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink }
+// export const cleanUpExpandedBlog = (rawData) => {
+//     const {sys, fields} = rawData
+//     const {id} = sys
+//     const postTitle = fields.restaurantName
+//     const postLocationImg = fields.locationImage.fields.file.url
+//     const postFoodImg = fields.foodImage.fields.file.url
+//     const postDate = fields.date
+//     const postLocation = fields.location
+//     const postAtmosphere = fields.atmosphereRating
+//     const postFood = fields.foodRating
+//     const postService = fields.serviceRating
+//     const postValue = fields.valueRating
+//     const postOverall = fields.overallRating
+//     const postSink = fields.sinkRating
+//     let cleanExpandedBlog = { id, postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink }
 
-    return cleanExpandedBlog
-}
+//     return cleanExpandedBlog
+// }

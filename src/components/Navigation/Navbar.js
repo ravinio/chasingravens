@@ -27,7 +27,6 @@ export default function Navbar() {
             <Flex display={{ base: 'none', sm: 'flex'}} zIndex={20} w='100vw' pos='fixed' top='0' overflowY='auto' flexDirection='row' alignItems='center'>
                 <Box opacity='0'>Menu</Box>
                 <IconButton
-                    ariaLabel='Open Menu'
                     size='sm'
                     m={2}
                     icon={<HamburgerIcon />}
@@ -40,7 +39,6 @@ export default function Navbar() {
                 
                 <Box>Menu</Box>
                 <IconButton
-                    ariaLabel='Open Menu'
                     size='sm'
                     m={2}
                     
@@ -56,7 +54,6 @@ export default function Navbar() {
                 
                 <Box>Menu</Box>
                 <IconButton
-                    ariaLabel='Open Menu'
                     size='sm'
                     m={2}
                     
@@ -72,7 +69,6 @@ export default function Navbar() {
                     <IconButton 
                         className='navDisplay'
                         m={2}
-                        ariaLabel='Close Icon'
                         size='sm'
                         icon={ <CloseIcon />}
                         variant='ghost'
@@ -86,7 +82,6 @@ export default function Navbar() {
                     <Box>Menu</Box>
                     <IconButton 
                         m={2}
-                        ariaLabel='Close Icon'
                         size='sm'
                         icon={ <CloseIcon />}
                         variant='ghost'
@@ -101,7 +96,6 @@ export default function Navbar() {
                     <Box>Menu</Box>
                     <IconButton 
                         m={2}
-                        ariaLabel='Close Icon'
                         size='sm'
                         icon={ <CloseIcon />}
                         variant='ghost'
@@ -130,7 +124,7 @@ export default function Navbar() {
                     </Box>
 
                     <Box m={5} position='absolute' bottom='0' right='0' color='rgba(255,255,255,0.1)'>
-                        <Link href='https://www.raviniodesigns.com/' display='flex' alignItems='center'>
+                        <Link href='https://www.raviniodesigns.com/' display='flex'>
                             Designed and Built by Ravin Io
                             <ExternalLinkIcon ml={2} />
                         </Link>
