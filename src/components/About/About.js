@@ -29,7 +29,7 @@ const About = () => {
             </div>
         </section>
         <Center bg='rgba(18, 18, 26,1)' >
-            <Image src={Bat} alt='If your a bat, Im a bat' />
+            <Image src={Bat} alt='If your a bat, Im a bat.' />
         </Center>
         </>
     )
