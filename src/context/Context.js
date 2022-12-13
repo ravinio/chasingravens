@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import { client } from './client'
-import { cleanUpAbout, cleanUpCarouselSllides, cleanUpBlogPost } from './helpers'
+import React, { useState, useEffect, useCallback } from "react"
+import { client } from "./client"
+import { cleanUpAbout, cleanUpCarouselSllides, cleanUpBlogPost } from "./helpers"
 
 export const Context = React.createContext()
 
@@ -23,7 +23,7 @@ export const Provider = (props) => {
     const getAbout = useCallback( async () => {
         setIsAboutLoading(true)
         try {
-            const response = await client.getEntry('4UqH1glPmT4ew1DmORtLKr')
+            const response = await client.getEntry("4UqH1glPmT4ew1DmORtLKr")
             if (response) {
                 saveAboutData(response)
             } else {
@@ -50,7 +50,7 @@ export const Provider = (props) => {
     const getCarouselSlides = useCallback(async () => {
         setIsCarouselLoading(true)
         try {
-            const response = await client.getEntries({ content_type: 'blogCarousel' })
+            const response = await client.getEntries({ content_type: "blogCarousel" })
             const responseData = response.items
             if (responseData) {
                 saveCarouselData(responseData)
@@ -78,7 +78,7 @@ export const Provider = (props) => {
     const getBlogPost = useCallback(async () => {
         setIsBlogLoading(true)
         try {
-            const response = await client.getEntries({ content_type: 'blogPost' })
+            const response = await client.getEntries({ content_type: "blogPost" })
             const responseData = response.items
             if (responseData) {
                 saveBlogData(responseData)
@@ -106,7 +106,7 @@ export const Provider = (props) => {
     // const getExpandedBlog = useCallback( async () => {
     //     setIsExpandedBlogLoading(true)
     //     try {
-    //         const response = await client.getEntry({ content_type: 'blogPost' })
+    //         const response = await client.getEntry({ content_type: "blogPost" })
     //         if (response) {
     //             saveExpandedBlogData(response)
     //         } else {

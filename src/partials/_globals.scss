@@ -14,13 +14,13 @@ body {
     color: $textColor;
     background-color: $background;
     font-weight: 300;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .accentText {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 section {
@@ -45,7 +45,7 @@ section {
     &:first-letter {
         font-size: 1.5em;
         font-weight: 700;
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         color: $primaryColor;
     }
 }

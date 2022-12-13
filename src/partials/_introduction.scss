@@ -1,6 +1,6 @@
 .introWrapper {
     padding: 100px 0px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     background-color: rgba(18, 18, 26,1);
     
     @media (max-width: 950px) {
@@ -21,7 +21,7 @@
 
     &:first-letter {
         font-weight: 700;
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         color: $primaryColor;
     }
 }

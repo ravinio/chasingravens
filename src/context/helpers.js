@@ -1,5 +1,5 @@
-import { marked } from 'marked'
-import DOMPurify from 'dompurify'
+import { marked } from "marked"
+import DOMPurify from "dompurify"
 
 export const getHTMLData = (rawData) => {
     const htmlString = marked(rawData)

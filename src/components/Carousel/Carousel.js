@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import CarouselSlide from './CarouselSlide'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Autoplay, Pagination } from 'swiper'
-import 'swiper/scss'
-import 'swiper/scss/navigation'
-import 'swiper/scss/pagination'
-import Loader from '../Loader/Loader'
-import { Context } from '../../context/Context'
+import React, { useContext } from "react"
+import CarouselSlide from "./CarouselSlide"
+import { Swiper, SwiperSlide } from "swiper/react"
+import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper"
+import "swiper/scss"
+import "swiper/scss/navigation"
+import "swiper/scss/pagination"
+import Loader from "../Loader/Loader"
+import { Context } from "../../context/Context"
 
 SwiperCore.use([Navigation])
 
@@ -23,7 +23,7 @@ const Carousel = () => {
     }
 
     return (
-        <div className='carousel'>
+        <div className="carousel">
             <Swiper 
                 autoplay={{ delay: 7500, disableOnInteraction: false, }}  
                 spaceBetween={30}     

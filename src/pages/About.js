@@ -1,5 +1,5 @@
-import React from 'react'
-import AboutSection from '../components/About/About'
+import React from "react"
+import AboutSection from "../components/About/About"
 
 const About = () => {
   return (
