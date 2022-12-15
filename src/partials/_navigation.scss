@@ -8,7 +8,8 @@
     height: 56px;
     transition-duration: .5s;
 
-    font-family: "Source Code Pro", monospace;   
+    font-family: "Source Code Pro", monospace;  
+    color: $white;
   }
   
   .navbarActive {
@@ -21,7 +22,8 @@
     height: 56px;
     transition-duration: .5s;
 
-    font-family: "Source Code Pro", monospace;   
+    font-family: "Source Code Pro", monospace;
+    color: $white;   
   }
 
   .siteName {
