@@ -6,14 +6,18 @@
     box-sizing: border-box;
 }
 
-* { scroll-behavior: smooth; }
+* { 
+    scroll-behavior: smooth; 
+    background-color: $background;
+    color: $white;
+}
 
 body {
     margin: 0;
     padding: 0;
-    color: $textColor;
     background-color: $background;
     font-weight: 300;
+    color: $white;
     font-family: "Source Code Pro", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
