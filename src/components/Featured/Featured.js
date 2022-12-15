@@ -38,7 +38,7 @@ const Featured = () => {
                 {/* More Blogs */}
                 <GridItem colSpan={{ base: "1", sm: "2", lg: "3" }}>
                     <Flex h="100%" flexDirection="column" justifyContent="end" alignItems="center" p={5}>
-                        <h2>Find More Blogs Here</h2>
+                        <h2 style={{ color: "#fff" }}>Find More Blogs Here</h2>
                         <div className="btnDisplay">
                             <a href="/Blogs" className="redbtn">Read Now</a>
                         </div>
