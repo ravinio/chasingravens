@@ -109,8 +109,8 @@ export default function Navbar() {
                     <CustomLink onClick={() => changeDisplay("none")} to="/blogs">Blogs</CustomLink>
                 </Flex>
 
-                <Box className="wordmark" position="absolute" w="100vw" top="20vh" zIndex="1"> 
-                        <Flex flexDirection="row">
+                <Box position="absolute" w="100vw" top="20vh" zIndex="1"> 
+                        <Flex className="wordmark" flexDirection="row">
                             <Box>r</Box>
                             <Spacer />
                             <Box>i</Box>
