@@ -25,7 +25,7 @@ const Carousel = () => {
     return (
         <div className="carousel">
             <Swiper 
-                autoplay={{ delay: 7500, disableOnInteraction: false, }}  
+                autoplay={{ delay: 10000, disableOnInteraction: false, }}  
                 spaceBetween={30}     
                 loop={true} 
                 pagination={{
