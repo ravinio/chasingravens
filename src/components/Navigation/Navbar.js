@@ -29,6 +29,7 @@ export default function Navbar() {
                 <IconButton
                     size="sm"
                     m={2}
+                    mr={10}
                     icon={<HamburgerIcon />}
                     opacity="0"
                 />
@@ -41,6 +42,7 @@ export default function Navbar() {
                 <IconButton
                     size="sm"
                     m={2}
+                    mr={10}
                     
                     icon={<HamburgerIcon />}
                     variant="ghost"
@@ -56,6 +58,7 @@ export default function Navbar() {
                 <IconButton
                     size="sm"
                     m={2}
+                    mr={4}
                     
                     icon={<HamburgerIcon />}
                     variant="ghost"

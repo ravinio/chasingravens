@@ -47,7 +47,11 @@ const BlogPage = (props) => {
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
-                        <h3 className="sinkSection">The Overall Rating: <strong style={{ color: "#FF2173"}}>{postSink} Sinks</strong></h3>
+                        <h4>The Overall Rating:</h4> 
+                        <h2 className="sinks">{postSink} Sinks</h2>
+                        <Center>
+                            <Divider className="dividerStyle" orientation="horizontal" />
+                        </Center>
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }} mb="50px">

@@ -1,4 +1,5 @@
 .wrapper {
+    color: $white;
     font-family: "Source Code Pro", monospace;
     background-color: rgba(18, 18, 26,1);
 
@@ -34,6 +35,14 @@
         background-size: cover;
         background-position: center;
     }
+
+    &:hover {
+        .whitebtn{
+            background-color: $background;
+            border: 1px solid $background;
+            letter-spacing: 4px;
+        }
+    }
 }
 
 .spezia {
@@ -50,6 +59,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+
+    &:hover {
+        .whitebtn{
+            background-color: $background;
+            border: 1px solid $background;
+            letter-spacing: 4px;
+        }
     }
 }
 
@@ -72,6 +89,14 @@
         background-size: cover;
         background-position: center;
     }
+
+    &:hover {
+        .whitebtn{
+            background-color: $background;
+            border: 1px solid $background;
+            letter-spacing: 4px;
+        }
+    }
 }
 
 .earlyBird {
@@ -92,6 +117,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+
+    &:hover {
+        .whitebtn{
+            background-color: $background;
+            border: 1px solid $background;
+            letter-spacing: 4px;
+        }
     }
 }
 
@@ -114,12 +147,23 @@
         background-size: cover;
         background-position: center;
     }
+
+    &:hover {
+        .whitebtn{
+            background-color: $background;
+            border: 1px solid $background;
+            letter-spacing: 4px;
+        }
+    }
 }
 
 .info {
     position: fixed;
     height: 40vh;
 }
+
+
+
 
 .btnDisplay {
 
@@ -135,11 +179,11 @@
         letter-spacing: 2px;
         transition: 0.5s;
     
-        &:hover {
-            background-color: $background;
-            border: 1px solid $background;
-            letter-spacing: 4px;
-        }
+        // &:hover {
+        //     background-color: $background;
+        //     border: 1px solid $background;
+        //     letter-spacing: 4px;
+        // }
     }
 
     .redbtn {
