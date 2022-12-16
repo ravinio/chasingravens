@@ -17,7 +17,7 @@ const PostContainer = () => {
     }
     
     return (
-        <SimpleGrid className="postContainer" columns={{ base: 2, lg: 3 }} spacing={5} padding={{ base: "0px 20px", md: "0px 50px" }}>
+        <SimpleGrid className="postContainer" columns={{ base: 1, sm: 2, lg: 3 }} spacing={{ base: 3, sm: 4, lg: 5 }} padding={{ base: "0px 20px", md: "0px 50px" }}>
             {blogPost.map((item) => {
                 const {id, postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink} = item
                 return (

@@ -20,15 +20,17 @@ const Post = (props) => {
   
     return (
       <>
-        <Flex className="postSquare" style={{ backgroundImage: `url(${postLocationImg})`}} flexDirection="column" justifyContent="end" h={{ base: "25vh", sm: "35vh", md: "45vh" }} p={{ base: "10px", md: "30px" }}>
-            <h2>{postTitle}</h2>
-            <p className="sinkEmphasis">Sink Rating: {postSink}</p>
-            <Flex w="100%" pt={{ base: "30px", md: "50px"}}>
-                <Box onClick={() => changeDisplay("flex")} cursor="pointer">Read More</Box>
-                <Spacer />
-                <Flex alignItems="center" flexWrap="wrap" gap="8px">
-                    {postDate} <TimeIcon />
-                </Flex>
+        <Flex className="postSquare" style={{ backgroundImage: `url(${postLocationImg})`}} flexDirection="column" justifyContent="end" h={{ base: "25vh", sm: "35vh", md: "45vh" }}>
+            <Flex className="squareContent" flexDirection="column" justifyContent="end" p={{ base: "10px", md: "30px" }}>
+              <h2>{postTitle}</h2>
+              <p className="sinkEmphasis">Sink Rating: {postSink}</p>
+              <Flex w="100%">
+                  <Box onClick={() => changeDisplay("flex")} className="readMore" cursor="pointer">Read More</Box>
+                  <Spacer />
+                  <Flex alignItems="center" flexWrap="wrap" gap="8px">
+                      {postDate} <TimeIcon />
+                  </Flex>
+              </Flex>
             </Flex>
         </Flex> 
 
