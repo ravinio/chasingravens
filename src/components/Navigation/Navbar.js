@@ -38,7 +38,7 @@ export default function Navbar() {
                 <CustomLink className="siteName" onClick={() => changeDisplay("none")} to="/">chasing ravens</CustomLink>
                 <Spacer />
                 
-                <Box>Menu</Box>
+                <Box onClick={() => changeDisplay("flex")}>Menu</Box>
                 <IconButton
                     size="sm"
                     m={2}
@@ -82,7 +82,7 @@ export default function Navbar() {
                     <CustomLink className="siteName" onClick={() => changeDisplay("none")} to="/">chasing ravens</CustomLink>
                     <Spacer />
 
-                    <Box>Menu</Box>
+                    <Box onClick={() => changeDisplay("none")}>Menu</Box>
                     <IconButton 
                         m={2}
                         size="sm"
@@ -96,7 +96,7 @@ export default function Navbar() {
                     <Box m={4} className="siteName">chasing ravens</Box>
                     <Spacer />
 
-                    <Box>Menu</Box>
+                    <Box onClick={() => changeDisplay("none")}>Menu</Box>
                     <IconButton 
                         m={2}
                         size="sm"
