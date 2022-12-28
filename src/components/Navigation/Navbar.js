@@ -51,7 +51,9 @@ export default function Navbar() {
             </Flex>
 
             <Flex display={{ base: "flex", sm: "none"}} zIndex={20} w="100vw" pos="fixed" top="0" overflowY="auto" flexDirection="row" alignItems="center">
-                <Box m={4} className="siteName">chasing ravens</Box>
+                <Box m={4}>
+                    <CustomLink onClick={() => changeDisplay("none")} to="/" className="siteName">chasing ravens</CustomLink>
+                </Box>
                 <Spacer />
                 
                 <Box>Menu</Box>
