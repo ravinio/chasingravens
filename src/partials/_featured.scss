@@ -99,21 +99,21 @@
     }
 }
 
-.earlyBird {
+.pinthouseBrewing {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/early-bird-location.jpeg); 
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/pinthouse-brewing.jpg); 
     background-size: cover; 
     background-position: center; 
     
     @media (max-width: 30em) {
-        background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/early-bird-location.jpeg); 
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/pinthouse-brewing.jpg); 
     }
 
     .foodImg {
         height: 50vh;
 
-        background-image: url(../assets/FeaturedImages/early-bird-food.jpeg); 
+        background-image: url(../assets/FeaturedImages/food_PinthousePizza4.jpg); 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

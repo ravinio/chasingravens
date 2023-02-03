@@ -9,7 +9,7 @@ const FeaturedBlog = () => {
     return (
       <>
         <Flex h="100%" flexDirection="column" justifyContent="end" alignItems="center" p={5}>
-            <h2>Early Bird</h2>
+            <h2>Pinthouse Brewing</h2>
             <div className="btnDisplay">
                 {/* <a href="/" className="whitebtn">Read Now</a> */}
                 <Box className="whitebtn" onClick={() => changeDisplay("flex")} cursor="pointer">Read Now</Box>
@@ -30,8 +30,8 @@ const FeaturedBlog = () => {
 
             <Flex className="blogExpanded" flexDirection="column" w="100%">  
                 <Flex flexDirection="column" justifyContent="center" p={{ base: "20px", sm: "40px" }}>
-                    <h4>9/11/2012</h4>
-                    <h2>Early Bird</h2>
+                    <h4>1/6/2023</h4>
+                    <h2>Pinthouse Brewing</h2>
                     <h3 className="sinkEmphasis">Sink Rating: 4</h3>
                     <Center>
                         <Divider className="dividerStyle" orientation="horizontal" />
@@ -41,14 +41,21 @@ const FeaturedBlog = () => {
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Atmosphere</h2>
                         <div className="sectionParagraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        - Loved it, was a tastefully done. 
+                        - Its in a huge brewery with two sections: A huge open area that was slightly outdoors that was very pet friendly and an indoor more intimate bar area.
+                        - Pretty packed but not overwhelming and spread out, you can enjoy the atmosphere of people with having to endure hearing their conversations
+                        - Great music and perfect lighting with lots of plants
+                        - Chase: 8 Ravin: 7
                         </div>
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Service</h2>
                         <div className="sectionParagraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        - Had to provide multiple ID’s because they didn’t trust the NE one Chase had
+                        - Bartender was helpful, out of the 12 drinks we ordered, he picked out 9 of them
+                        - Not a lot of interaction at the table, you order and pay through an app
+                        - Chase: 7 Ravin: 5                        
                         </div>
                     </Box>
 
@@ -58,14 +65,16 @@ const FeaturedBlog = () => {
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Food</h2>
                         <div className="sectionParagraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        - Ordered 2 deep dish pizzas and they were great!
+                        - The ricotta was sweet, they used imaginative ingredients, and the pizzas were cooked perfectly
+                        - Chase: 7 Ravin: 7                       
                         </div>
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Value</h2>
                         <div className="sectionParagraph">
-                          Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        For 2 beer flights, 2 pints, and 2 pizzas split between 4 people, it was a reasonable price.
                         </div>
                     </Box>
 
@@ -79,7 +88,7 @@ const FeaturedBlog = () => {
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }} mb="50px">
                       <div className="sectionParagraph">
-                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Would love to make this a go to spot for hanging out with friends.
                       </div>
                     </Box>
                 </Flex>       

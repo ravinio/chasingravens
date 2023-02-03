@@ -25,8 +25,8 @@ const Featured = () => {
                     <SquareThree />
                 </GridItem>
 
-                {/* Early Bird */}
-                <GridItem className="earlyBird" rowSpan={{ base: "1", sm: "1", lg: "2" }}>
+                {/* Pinthouse Brewing */}
+                <GridItem className="pinthouseBrewing" rowSpan={{ base: "1", sm: "1", lg: "2" }}>
                     <SquareFour />
                 </GridItem>
 
