@@ -3,7 +3,7 @@ import { Context } from "../../context/Context"
 import Loader from "../Loader/Loader"
 import { Flex, Spacer, Box, IconButton } from "@chakra-ui/react"
 import { ArrowBackIcon } from "@chakra-ui/icons"
-import { TimeIcon } from "@chakra-ui/icons"
+import { CalendarIcon } from "@chakra-ui/icons"
 import BlogPage from "../BlogPage/BlogPage"
 
 const Post = (props) => {
@@ -28,7 +28,7 @@ const Post = (props) => {
                   <Box onClick={() => changeDisplay("flex")} className="readMore" cursor="pointer">Read More</Box>
                   <Spacer />
                   <Flex alignItems="center" flexWrap="wrap" gap="8px">
-                      {postDate} <TimeIcon />
+                      {postDate} <CalendarIcon />
                   </Flex>
               </Flex>
             </Flex>
