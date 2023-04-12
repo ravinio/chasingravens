@@ -1,15 +1,14 @@
 //Blog Landing Page
-.blogWrap {
-    height: 70vh;
-    width: 100vw;
-    padding: 80px 20px 0px 20px;
 
+.blogWrap {
+    height: auto;
+    width: 100vw;
+    padding: 80px 20px 60px 20px;
 
     background-image: linear-gradient(180deg, rgba(18,18,26,0.2) 0%, rgba(18,18,26,1) 84%), url(../assets/blogsPage/black-foliage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    // background-position: 50% 80%;
-    // filter: grayscale(50%);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
 
     font-family: "Source Code Pro", monospace;
     text-align: center;
