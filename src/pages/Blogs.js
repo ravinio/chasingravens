@@ -1,6 +1,5 @@
 import React from "react"
 import BlogIntroduction from "../components/Introduction/BlogIntroduction"
-// import SearchPost from "../components/SearchBlogs/SearchBlogs"
 import PostContainer from "../components/Post/PostContainer"
 
 const Blogs = () => {
@@ -9,12 +8,8 @@ const Blogs = () => {
         style={{ backgroundColor: "rgba(18, 18, 26,1)" }}
       >
         <BlogIntroduction />
-        {/* <SearchPost /> */}
 
-        <div 
-          //style={{ marginTop: "-180px", zIndex: "100", position:"relative" }}
-        >
-          {/* <SearchPost /> */}
+        <div>
           <PostContainer />
         </div>
       </div>
