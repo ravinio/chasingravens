@@ -47,7 +47,7 @@ function SearchPost(){
             </Flex>
             
             <SimpleGrid
-                style={{ color: "black" }}
+                className="titleHelp"
                 columns={{ base: 1, sm: 2, lg: 3 }}
                 spacing={{ base: 3, sm: 4, lg: 5 }}
                 padding={{ base: "0px 20px 100px", md: "0px 50px 100px" }}
