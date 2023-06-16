@@ -9,7 +9,7 @@ const FeaturedBlog = () => {
     return (
       <>
         <Flex h="100%" flexDirection="column" justifyContent="end" alignItems="center" p={5}>
-            <h2>Los Tapatios</h2>
+            <h2>White Mulberries</h2>
             <div className="btnDisplay">
                 {/* <a href="/" className="whitebtn">Read Now</a> */}
                 <Box className="whitebtn" onClick={() => changeDisplay("flex")} cursor="pointer">Read Now</Box>
@@ -30,9 +30,9 @@ const FeaturedBlog = () => {
 
             <Flex className="blogExpanded" flexDirection="column" w="100%">  
                 <Flex flexDirection="column" justifyContent="center" p={{ base: "20px", sm: "40px" }}>
-                    <h4>9/11/2012</h4>
-                    <h2>Los Tapatios</h2>
-                    <h3 className="sinkEmphasis">Sink Rating: 4</h3>
+                    <h4>04/05/2023</h4>
+                    <h2>White Mulberries</h2>
+                    <h3 className="sinkEmphasis">Sink Rating: 5</h3>
                     <Center>
                         <Divider className="dividerStyle" orientation="horizontal" />
                     </Center>
@@ -41,14 +41,17 @@ const FeaturedBlog = () => {
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Atmosphere</h2>
                         <div className="sectionParagraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          This café was positioned looking at St. Kathrine's Docks with a bunch of nice looking boats and yachts, to say the least it is very scenic. Inside is modern and cozy with great music.
+                          - Chase: 8 Ravin: 8                        
                         </div>
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Service</h2>
                         <div className="sectionParagraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                          DISCLAIMER: In the UK, the culture surrounding tipping differs from that in the US. Unlike in the US, where tipping is customary and often considered an integral part of the service industry, tipping in the UK is not as prevalent or expected. Consequently, UK servers may appear more reserved or less focused on constantly engaging with customers, as they tend to prioritize efficient service without excessive small talk.
+                          Due to this difference, we are rating this category on a scale of 1-3: 1 is awful and they were rude, 2 is fine and got the job done, and 3 is they talked to us and smiled.                         
+                          - Chase: 2 Ravin: 2
                         </div>
                     </Box>
 
@@ -58,20 +61,21 @@ const FeaturedBlog = () => {
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Food</h2>
                         <div className="sectionParagraph">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          Chase ordered the Truffle Bacon & Rich Yolk Sunny Side Eggs that came with THE BEST MUSHROOM WE HAVE EVER HAD. Ravin's americano and croissant was also fantastic but the mushroom is something we will talk about for a long time. It was so damn good, like really.
+                          - Chase: 10 Ravin: 10                        
                         </div>
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h2 className="sectionTitle">Value</h2>
                         <div className="sectionParagraph">
-                          Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          Although it was expensive for a coffee shop, we would pay a lot more to have that mushroom again. Definitely one of the best breakfast we have ever had, possibly in our lives.                        
                         </div>
                     </Box>
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }}>
                         <h4>The Overall Rating:</h4> 
-                        <h2 className="sinks">4 Sinks</h2>
+                        <h2 className="sinks">5 Sinks</h2>
                         <Center>
                             <Divider className="dividerStyle" orientation="horizontal" />
                         </Center>
@@ -79,7 +83,7 @@ const FeaturedBlog = () => {
 
                     <Box mx={{ base: "20px", sm: "60px", md: "100px", lg: "170px" }} mb="50px">
                       <div className="sectionParagraph">
-                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        I mean..... it has to be right!? We will have dreams about the perfectly fried truffle bacon, the warm runny yolk from the eggs, the organic sourdough, roasted leek and avocados, the flakiest croissant we've ever met, and that absolutely amazing chestnut mushroom.                      
                       </div>
                     </Box>
                 </Flex>       

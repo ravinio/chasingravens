@@ -70,21 +70,21 @@
     }
 }
 
-.losTapatios {
+.whiteMulberries {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/los-tapatios-location.jpeg); 
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/mulberries-outside.png); 
     background-size: cover; 
     background-position: center;  
     
     @media (max-width: 30em) {
-        background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/los-tapatios-location.jpeg); 
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 43%, rgba(0,0,0,0.5) 80%), url(../assets/FeaturedImages/mulberries-outside.png); 
     }
 
     .foodImg {
         height: 50vh;
 
-        background-image: url(../assets/FeaturedImages/los-tapatios-food.jpeg); 
+        background-image: url(../assets/FeaturedImages/mulberries-food.png); 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

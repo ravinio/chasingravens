@@ -162,6 +162,15 @@
         font-size: calc(12px + (15 - 12) * ((100vw - 270px) / (1600 - 270)));
     }
 
+    hr {
+        color: $primaryColor;
+    }
+
+    .lineBreak {
+        color: $primaryColor;
+        height: 2px;
+    }
+
     .foodImg {
         height: 50vh;
 

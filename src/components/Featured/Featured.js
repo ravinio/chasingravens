@@ -15,8 +15,8 @@ const Featured = () => {
                     <SquareOne />
                 </GridItem>
 
-                {/* Los Tapatios */}
-                <GridItem className="losTapatios" rowSpan={1}>
+                {/* White Mulberries */}
+                <GridItem className="whiteMulberries" rowSpan={1}>
                     <SquareTwo />
                 </GridItem>
             
