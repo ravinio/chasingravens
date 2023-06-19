@@ -98,15 +98,6 @@ function SearchPost(){
                     </div>
                 );
             })}
-
-            
-      
-                
-
-            
- 
-
-
         </SimpleGrid>
         </>
     )
