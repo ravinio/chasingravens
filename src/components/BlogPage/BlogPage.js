@@ -2,6 +2,23 @@ import React, { useContext } from "react"
 import { Context } from "../../context/Context"
 import Loader from "../Loader/Loader"
 import { Flex, Box, Divider, Center  } from "@chakra-ui/react"
+import { TbBat } from "react-icons/tb";
+
+const renderStarIcons = (rating) => {
+    const starIcons = [];
+    for (let i = 1; i <= rating; i++) {
+      starIcons.push(
+        <TbBat
+          //className="sinkEmphasis"
+          key={i}
+          color="FF2173"
+          w={4}
+          h={4}
+        />
+      );
+    }
+    return starIcons;
+  };
 
 const BlogPage = (props) => {
     const {isBlogLoading} = useContext(Context)
@@ -17,7 +34,7 @@ const BlogPage = (props) => {
                 <Flex flexDirection="column" justifyContent="center" p={{ base: "20px", sm: "40px" }}>
                     <h4>{postDate}</h4>
                     <h2>{postTitle}</h2>
-                    <h3 className="sinkEmphasis">Sink Rating: {postSink}</h3>
+                    <Flex gap="2" justifyContent="center">{renderStarIcons(postSink)}</Flex>
                     <Center>
                         <Divider className="dividerStyle" orientation="horizontal" />
                     </Center>

@@ -4,7 +4,24 @@ import Loader from "../Loader/Loader"
 import { Flex, Spacer, Box, IconButton } from "@chakra-ui/react"
 import { ArrowBackIcon } from "@chakra-ui/icons"
 import { CalendarIcon } from "@chakra-ui/icons"
+import { TbBat } from "react-icons/tb";
 import BlogPage from "../BlogPage/BlogPage"
+
+const renderStarIcons = (rating) => {
+  const starIcons = [];
+  for (let i = 1; i <= rating; i++) {
+    starIcons.push(
+      <TbBat
+        //className="sinkEmphasis"
+        key={i}
+        color="FF2173"
+        w={4}
+        h={4}
+      />
+    );
+  }
+  return starIcons;
+};
 
 const Post = (props) => {
     // Open and Close Menu
@@ -21,9 +38,9 @@ const Post = (props) => {
     return (
       <>
         <Flex className="postSquare" style={{ backgroundImage: `url(${postLocationImg})`}} flexDirection="column" justifyContent="end" h={{ base: "25vh", sm: "35vh", md: "45vh" }}>
-            <Flex className="squareContent" flexDirection="column" justifyContent="end" p={{ base: "10px", md: "30px" }}>
+            <Flex className="squareContent" flexDirection="column" justifyContent="end" gap='2' p={{ base: "10px", md: "30px" }}>
               <h2>{postTitle}</h2>
-              <p className="sinkEmphasis">Sink Rating: {postSink}</p>
+              <Flex gap="2" justifyContent="left">{renderStarIcons(postSink)}</Flex>
               <Flex w="100%">
                   <Box onClick={() => changeDisplay("flex")} className="readMore" cursor="pointer">Read More</Box>
                   <Spacer />
