@@ -1,6 +1,9 @@
 .carousel {
     position: relative;
     z-index: 0;
+    .swiper-pagination-bullet-active {
+        background: $white;
+    }
 }
 
 .slideWrap {

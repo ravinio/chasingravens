@@ -4,7 +4,7 @@ import Loader from "../Loader/Loader"
 import { Flex, Spacer, Box, IconButton } from "@chakra-ui/react"
 import { ArrowBackIcon } from "@chakra-ui/icons"
 import { CalendarIcon } from "@chakra-ui/icons"
-import renderSinks from "./SinkRating"
+import renderSinks from "../Sinks/SinkRating"
 import BlogPage from "../BlogPage/BlogPage"
 
 const Post = (props) => {
@@ -21,15 +21,45 @@ const Post = (props) => {
   
     return (
       <>
-        <Flex className="postSquare" style={{ backgroundImage: `url(${postLocationImg})`}} flexDirection="column" justifyContent="end" h={{ base: "25vh", sm: "35vh", md: "45vh" }}>
-          <Flex className="squareContent" flexDirection="column" alignItems="flex-start" justifyContent="end" gap='2' p={{ base: "10px", md: "30px" }}>
+        <Flex 
+          className="postSquare" 
+          style={{ 
+            backgroundImage: `url(${postLocationImg})`
+          }} 
+          flexDirection="column" 
+          justifyContent="end" 
+          h={{ base: "25vh", sm: "35vh", md: "45vh" }}
+        >
+          <Flex 
+            className="squareContent" 
+            flexDirection="column" 
+            alignItems="flex-start" 
+            justifyContent="end" 
+            gap='2' 
+            p={{ base: "10px", md: "30px" }}
+          >
             <h2>{postTitle}</h2>
-            <Flex gap="2" justifyContent="left">{renderSinks(postSink)}</Flex>
+            <Flex 
+              gap="2" 
+              justifyContent="left"
+            >
+              {renderSinks(postSink)}
+            </Flex>
             <Flex w="100%">
-                <Box onClick={() => changeDisplay("flex")} className="readMore" cursor="pointer">Read More</Box>
+                <Box 
+                  onClick={() => changeDisplay("flex")} 
+                  className="readMore" 
+                  cursor="pointer"
+                >
+                  Read More
+                </Box>
                 <Spacer />
-                <Flex alignItems="center" flexWrap="wrap" gap="8px">
-                    {postDate} <CalendarIcon />
+                <Flex 
+                  alignItems="center" 
+                  flexWrap="wrap" 
+                  gap="8px"
+                >
+                  {postDate} <CalendarIcon />
                 </Flex>
             </Flex>
           </Flex>
@@ -42,7 +72,6 @@ const Post = (props) => {
                 icon={ <ArrowBackIcon />}
                 variant="ghost"
                 position="fixed"
-                color="#FF2173"
                 onClick={() => changeDisplay("none")}
             />
             <BlogPage postTitle={postTitle} postLocationImg={postLocationImg} postLocation={postLocation} postFood={postFood} postService={postService} postValue={postValue} postOverall={postOverall} postSink={postSink} postAtmosphere={postAtmosphere} postFoodImg={postFoodImg} postDate={postDate} />           

@@ -5,9 +5,13 @@ const Introduction = () => {
     return (
         <Flex className="introWrapper" alignItems="center" justifyContent="center">
             <Box maxW="900px" flexDirection="column">
-                <h2 className="introTitle">For My Bean</h2>
+                <h2 className="introTitle">A Culinary Chronicle</h2>
                 <br></br>
-                <p>This website was created for the sole purpose of making Chase Lee happy. <br></br><br></br> Chase and I (his partner) periodically visit multiple restaurants, bars, and other food locations from chains to mom-and-pop shops together. Here is where all our most favorite and rememberable places to the most unappealing and regretful one"s ratings live. If you’re here on this site and you’re not Chase, welcome!<br></br><br></br> Why are you here??? Stay a while and obsess over food with us.</p>
+                <p>
+                    Welcome fellow food enthusiasts! We're delighted to have you join us on our humble culinary odyssey through the world of flavors and delights. This isn't your typical food blog; it's a labor of love, a virtual treasure chest of the delectable places we've explored.
+                    <br></br><br></br> 
+                    Our mission isn't to be the biggest or most visited food blog out there. Instead, we've created this cozy corner of the internet as a personal haven for the exceptional spots my partner and I stumble upon. It's a digital diary of those remarkable eateries where every bite feels like a celebration, every aroma a memory in the making.                    <br></br><br></br> 
+                </p>
             </Box>
         </Flex>
     )

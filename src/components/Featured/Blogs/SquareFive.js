@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Context } from "../../../context/Context"
 import { Flex } from "@chakra-ui/react"
 import Loader from "../../../components/Loader/Loader"
-import Post from "../../Post/Post"
+import Post from "../Post/Post"
 
 const FeaturedBlog = () => {
     const {blogPost, isBlogLoading} = useContext(Context)
@@ -21,7 +21,11 @@ const FeaturedBlog = () => {
     }
 
     return (
-      <Flex className="featured" height="100%" key={specificPost.id}>
+      <Flex 
+        className="featured" 
+        height="100%" 
+        key={specificPost.id}
+      >
         <Post
           postTitle={specificPost.postTitle}
           postFoodImg={specificPost.postFoodImg}

@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Context } from "../../context/Context"
 import Loader from "../Loader/Loader"
 import { Flex, Box, Divider, Center  } from "@chakra-ui/react"
-import renderSinks from "../Post/SinkRating";
+import renderSinks from "../Sinks/SinkRating";
 
 const BlogPage = (props) => {
     const {isBlogLoading} = useContext(Context)

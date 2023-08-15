@@ -19,7 +19,7 @@ const About = () => {
             <div className="row">
                 <div className="column">
                     <h2 className="titleText">{aboutTitle}</h2>
-                    <div dangerouslySetInnerHTML={{__html: aboutContent}}/>
+                    <div className="aboutText" dangerouslySetInnerHTML={{__html: aboutContent}}/>
                 </div>
                 <div className="column">
                     <div className="imgWrap">

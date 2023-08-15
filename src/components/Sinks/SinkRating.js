@@ -8,7 +8,6 @@ const renderSinks = (rating) => {
       <TbBat
         //className="sinkEmphasis"
         key={i}
-        color="#FF2173"
         w={4}
         h={4}
       />

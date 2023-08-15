@@ -1,5 +1,5 @@
 import React from "react"
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import  { Provider } from "./context/Context"
 import Navbar from "./components/Navigation/Navbar"
 import Footer from "./components/Footer/Footer"
@@ -8,9 +8,24 @@ import About from "./pages/About"
 import Blogs from "./pages/Blogs"
 import { Route, Routes } from "react-router-dom"
 
+const customTheme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bg: "rgb(26, 18, 26)"
+      }
+    }
+  },
+  colors: {
+    blue: {
+      500: '#FF2173'
+    }
+  }
+});
+
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={customTheme}>
       <Provider>
           <Navbar />
           <div className="App">

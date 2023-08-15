@@ -68,7 +68,7 @@ export default function Navbar() {
                 />
             </Flex>
 
-            <Flex display={display} w="100vw" bgColor="#000" zIndex={20} h="100vh" pos="fixed" top="0" right="0" overflowY="auto" flexDirection="column">
+            <Flex display={display} w="100vw" bgColor="rgb(26, 18, 26)" zIndex={20} h="100vh" pos="fixed" top="0" right="0" overflowY="auto" flexDirection="column">
                 <Flex display={{ base: "none", sm: "flex"}} flexDirection="row" alignItems="center">
                     <Box opacity="0">Menu</Box>
                     <IconButton 

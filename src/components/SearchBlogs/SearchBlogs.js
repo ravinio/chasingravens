@@ -36,12 +36,11 @@ function SearchPost(){
                     <Input
                         color="#FFF"
                         borderRadius="0px"
-                        focusBorderColor="#FF2173"
                         placeholder="search"
                         value={searchKeyword}
                         onChange={(event) => {
-                        setSearchKeyword(event.target.value);
-                    }}
+                            setSearchKeyword(event.target.value);
+                        }}
                     />
                 </InputGroup>
             </Flex>
@@ -63,6 +62,7 @@ function SearchPost(){
                 ) {
                 return item;
                 }
+                return null;
             })
             .sort((a, b) => (b.postDate > a.postDate ? 1 : -1))
             .map((item) => {

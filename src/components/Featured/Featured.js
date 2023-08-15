@@ -10,27 +10,43 @@ const Featured = () => {
     return (
         <>
             <Grid className="wrapper" h="100vh" templateRows={{ base: "repeat(1, 1fr)", sm: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap={3} py={3} px={3}>
-                {/* Sakura Bana */}
-                <GridItem className="sakuraBana" rowSpan={1}>
+                {/* Ika */}
+                <GridItem 
+                    className="featuredBlogSqr" 
+                    rowSpan={1}
+                >
                     <SquareOne />
                 </GridItem>
 
                 {/* White Mulberries */}
-                <GridItem className="whiteMulberries" rowSpan={1}>
+                <GridItem 
+                    className="featuredBlogSqr" 
+                    rowSpan={1}
+                >
                     <SquareTwo />
                 </GridItem>
             
-                {/* Blue */}
-                <GridItem className="blueSushi" rowSpan={{ base: "1", sm: "2", lg: "3" }}>
+                {/* Byward Kitchen & Bar */}
+                <GridItem 
+                    className="featuredBlogSqr" 
+                    rowSpan={{ base: "1", sm: "2", lg: "3" }}
+                >
                     <SquareThree />
                 </GridItem>
 
                 {/* Pinthouse Brewing */}
-                <GridItem className="pinthouseBrewing" rowSpan={{ base: "1", sm: "1", lg: "2" }}>
+                <GridItem 
+                    className="featuredBlogSqr" 
+                    rowSpan={{ base: "1", sm: "1", lg: "2" }}
+                >                    
                     <SquareFour />
                 </GridItem>
 
-                <GridItem rowSpan={{ base: "1", sm: "1", lg: "2" }}>
+                {/* Cibo Vino */}
+                <GridItem 
+                    className="featuredBlogSqr" 
+                    rowSpan={{ base: "1", sm: "1", lg: "2" }}
+                >
                     <SquareFive />
                 </GridItem>
 
