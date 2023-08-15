@@ -30,8 +30,7 @@ const Featured = () => {
                     <SquareFour />
                 </GridItem>
 
-                {/* Spezia */}
-                <GridItem className="spezia" rowSpan={{ base: "1", sm: "1", lg: "2" }}>
+                <GridItem rowSpan={{ base: "1", sm: "1", lg: "2" }}>
                     <SquareFive />
                 </GridItem>
 

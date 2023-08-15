@@ -4,24 +4,8 @@ import Loader from "../Loader/Loader"
 import { Flex, Spacer, Box, IconButton } from "@chakra-ui/react"
 import { ArrowBackIcon } from "@chakra-ui/icons"
 import { CalendarIcon } from "@chakra-ui/icons"
-import { TbBat } from "react-icons/tb";
+import renderSinks from "./SinkRating"
 import BlogPage from "../BlogPage/BlogPage"
-
-const renderStarIcons = (rating) => {
-  const starIcons = [];
-  for (let i = 1; i <= rating; i++) {
-    starIcons.push(
-      <TbBat
-        //className="sinkEmphasis"
-        key={i}
-        color="FF2173"
-        w={4}
-        h={4}
-      />
-    );
-  }
-  return starIcons;
-};
 
 const Post = (props) => {
     // Open and Close Menu
@@ -38,17 +22,17 @@ const Post = (props) => {
     return (
       <>
         <Flex className="postSquare" style={{ backgroundImage: `url(${postLocationImg})`}} flexDirection="column" justifyContent="end" h={{ base: "25vh", sm: "35vh", md: "45vh" }}>
-            <Flex className="squareContent" flexDirection="column" justifyContent="end" gap='2' p={{ base: "10px", md: "30px" }}>
-              <h2>{postTitle}</h2>
-              <Flex gap="2" justifyContent="left">{renderStarIcons(postSink)}</Flex>
-              <Flex w="100%">
-                  <Box onClick={() => changeDisplay("flex")} className="readMore" cursor="pointer">Read More</Box>
-                  <Spacer />
-                  <Flex alignItems="center" flexWrap="wrap" gap="8px">
-                      {postDate} <CalendarIcon />
-                  </Flex>
-              </Flex>
+          <Flex className="squareContent" flexDirection="column" alignItems="flex-start" justifyContent="end" gap='2' p={{ base: "10px", md: "30px" }}>
+            <h2>{postTitle}</h2>
+            <Flex gap="2" justifyContent="left">{renderSinks(postSink)}</Flex>
+            <Flex w="100%">
+                <Box onClick={() => changeDisplay("flex")} className="readMore" cursor="pointer">Read More</Box>
+                <Spacer />
+                <Flex alignItems="center" flexWrap="wrap" gap="8px">
+                    {postDate} <CalendarIcon />
+                </Flex>
             </Flex>
+          </Flex>
         </Flex> 
 
         <Flex display={display} w="100vw" h="100vh" bgColor="rgba(18,18,26,0.8)" zIndex={1000} pos="fixed" top="50" right="0" overflowY="auto" px={{ base: "10px", sm: "40px", md: "50px", lg: "100px" }} py={{ base: "10px", sm: "40px", md: "50px", lg: "100px" }}>
