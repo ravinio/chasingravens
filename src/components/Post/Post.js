@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import { Context } from "../../context/Context"
 import Loader from "../Loader/Loader"
 import { Flex, Spacer, Box, IconButton } from "@chakra-ui/react"
@@ -6,18 +6,42 @@ import { ArrowBackIcon } from "@chakra-ui/icons"
 import { CalendarIcon } from "@chakra-ui/icons"
 import renderSinks from "../Sinks/SinkRating"
 import BlogPage from "../BlogPage/BlogPage"
+import { useNavigate, useLocation } from "react-router-dom"
 
 const Post = (props) => {
     // Open and Close Menu
     const [display, changeDisplay] = useState("none")
 
+    const navigate = useNavigate()
+    const location = useLocation()
+
     const { isBlogLoading } = useContext(Context)
+
+    const { postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink } = props
+
+    const blogSlug = postTitle ? postTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') : 'blog-post'
+    const blogPath = `/blogs/${blogSlug}`
+
+    const openModal = () => {
+      changeDisplay("flex")
+      navigate(blogPath, { replace: false }) // Push new URL to history
+    }
+
+    const closeModal = () => {
+      changeDisplay("none")
+      navigate('/blogs', { replace: true }) // Replace current blog URL with /blogs
+    }
+
+    useEffect(() => {
+      // Check if the current URL path matches this blog post on mount
+      if (location.pathname === blogPath) {
+          changeDisplay("flex")
+      }
+    }, [location.pathname, blogPath])
 
     if (isBlogLoading) {
       return <Loader />
     }
-
-    const { postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink } = props
   
     return (
       <>
@@ -47,7 +71,7 @@ const Post = (props) => {
             </Flex>
             <Flex w="100%">
                 <Box 
-                  onClick={() => changeDisplay("flex")} 
+                  onClick={openModal} 
                   className="readMore" 
                   cursor="pointer"
                 >
@@ -72,7 +96,7 @@ const Post = (props) => {
                 icon={ <ArrowBackIcon />}
                 variant="ghost"
                 position="fixed"
-                onClick={() => changeDisplay("none")}
+                onClick={closeModal}
             />
             <BlogPage postTitle={postTitle} postLocationImg={postLocationImg} postLocation={postLocation} postFood={postFood} postService={postService} postValue={postValue} postOverall={postOverall} postSink={postSink} postAtmosphere={postAtmosphere} postFoodImg={postFoodImg} postDate={postDate} />           
           </Flex>
