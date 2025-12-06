@@ -6,14 +6,14 @@ import { ArrowBackIcon } from "@chakra-ui/icons"
 import { CalendarIcon } from "@chakra-ui/icons"
 import renderSinks from "../Sinks/SinkRating"
 import BlogPage from "../BlogPage/BlogPage"
-import { useNavigate, useLocation } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 const Post = (props) => {
     // Open and Close Menu
     const [display, changeDisplay] = useState("none")
 
     const navigate = useNavigate()
-    const location = useLocation()
+    const params = useParams()
 
     const { isBlogLoading } = useContext(Context)
 
@@ -23,26 +23,27 @@ const Post = (props) => {
     const blogPath = `/blogs/${blogSlug}`
 
     const openModal = () => {
-      changeDisplay("flex")
-      navigate(blogPath, { replace: false }) // Push new URL to history
-    }
+       changeDisplay("flex")
+       navigate(blogPath, { replace: false })
+    }
 
     const closeModal = () => {
       changeDisplay("none")
-      navigate('/blogs', { replace: true }) // Replace current blog URL with /blogs
+      navigate('/blogs', { replace: true })
     }
 
     useEffect(() => {
-      // Check if the current URL path matches this blog post on mount
-      if (location.pathname === blogPath) {
-          changeDisplay("flex")
-      }
-    }, [location.pathname, blogPath])
+      if (params.blogSlug === blogSlug) {
+          changeDisplay("flex")
+      } else {
+          changeDisplay("none")
+      }
+    }, [params.blogSlug, blogSlug])
 
     if (isBlogLoading) {
       return <Loader />
-    }
-  
+    }  
+    
     return (
       <>
         <Flex 

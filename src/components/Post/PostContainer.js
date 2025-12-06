@@ -11,7 +11,6 @@ const PostContainer = () => {
         return <Loader />
     }
 
-    // If there are no slides to display, then do not render the component
     if (!Array.isArray(blogPost) || !blogPost.length) {
         return null
     }
