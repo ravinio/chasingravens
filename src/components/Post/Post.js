@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react"
+import React, { useState, useContext } from "react"
 import { Context } from "../../context/Context"
 import Loader from "../Loader/Loader"
 import { Flex, Spacer, Box, IconButton } from "@chakra-ui/react"
@@ -6,39 +6,26 @@ import { ArrowBackIcon } from "@chakra-ui/icons"
 import { CalendarIcon } from "@chakra-ui/icons"
 import renderSinks from "../Sinks/SinkRating"
 import BlogPage from "../BlogPage/BlogPage"
-import { useNavigate, useParams } from "react-router-dom"
 
 const Post = (props) => {
     // Open and Close Menu
     const [display, changeDisplay] = useState("none")
 
-    const navigate = useNavigate()
-    const params = useParams()
-
     const { isBlogLoading } = useContext(Context)
 
-    const { postTitle, postLocationImg, postFoodImg, postDate, postLocation, postAtmosphere, postFood, postService, postValue, postOverall, postSink } = props
-
-    const blogSlug = postTitle ? postTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') : 'blog-post'
-    const blogPath = `/blogs/${blogSlug}`
-
-    const openModal = () => {
-       changeDisplay("flex")
-       navigate(blogPath, { replace: false })
-    }
-
-    const closeModal = () => {
-      changeDisplay("none")
-      navigate('/blogs', { replace: true })
-    }
-
-    useEffect(() => {
-      if (params.blogSlug === blogSlug) {
-          changeDisplay("flex")
-      } else {
-          changeDisplay("none")
-      }
-    }, [params.blogSlug, blogSlug])
+    const { 
+      postTitle, 
+      postLocationImg, 
+      postFoodImg, 
+      postDate, 
+      postLocation, 
+      postAtmosphere, 
+      postFood, 
+      postService, 
+      postValue, 
+      postOverall, 
+      postSink 
+    } = props
 
     if (isBlogLoading) {
       return <Loader />
@@ -72,7 +59,7 @@ const Post = (props) => {
             </Flex>
             <Flex w="100%">
                 <Box 
-                  onClick={openModal} 
+                  onClick={() => changeDisplay("flex")} 
                   className="readMore" 
                   cursor="pointer"
                 >
@@ -97,7 +84,7 @@ const Post = (props) => {
                 icon={ <ArrowBackIcon />}
                 variant="ghost"
                 position="fixed"
-                onClick={closeModal}
+                onClick={() => changeDisplay("none")} 
             />
             <BlogPage postTitle={postTitle} postLocationImg={postLocationImg} postLocation={postLocation} postFood={postFood} postService={postService} postValue={postValue} postOverall={postOverall} postSink={postSink} postAtmosphere={postAtmosphere} postFoodImg={postFoodImg} postDate={postDate} />           
           </Flex>

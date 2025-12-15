@@ -1,5 +1,4 @@
 import React from "react"
-import { Outlet } from "react-router-dom"
 import BlogIntroduction from "../components/Introduction/BlogIntroduction"
 import PostContainer from "../components/Post/PostContainer"
 
@@ -13,7 +12,6 @@ const Blogs = () => {
         <div>
           <PostContainer />
         </div>
-        <Outlet />
       </div>
     )
 }
